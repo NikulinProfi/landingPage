@@ -5,8 +5,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*:before,
-*:after {
+*:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -45,8 +44,7 @@ body textarea:required:valid {
   color: #000;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -55,7 +53,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   overflow-x: hidden;
   opacity: 1;
 }
@@ -70,6 +68,22 @@ img {
   height: auto;
 }
 
+/*btns*/
+.btn_simple {
+  color: #722ED1;
+  border: 1px solid #722ED1;
+  font-weight: 700;
+  padding: 6px 34px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.btn_simple:hover {
+  background-color: #722ED1;
+  color: #fff;
+}
+
+/*btns*/
 #header {
   padding-top: 24px;
 }
@@ -78,32 +92,32 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-#header .inner_header > .logo {
+#header .inner_header .logo {
   display: block;
   width: 48px;
   height: 48px;
 }
-#header .inner_header > .logo > img {
+#header .inner_header .logo > img {
   width: 100%;
 }
-#header .inner_header > .logo .right_side_header {
+#header .inner_header .logo > img .right_side_header {
   display: flex;
   align-items: center;
 }
-#header .inner_header > .logo .right_side_header .mnu_top {
+#header .inner_header .logo > img .right_side_header .mnu_top {
   list-style-type: none;
 }
-#header .inner_header > .logo .right_side_header .mnu_top > li {
+#header .inner_header .logo > img .right_side_header .mnu_top > li {
   display: inline-block;
   margin-right: 40px;
 }
-#header .inner_header > .logo .right_side_header .mnu_top > li > a {
+#header .inner_header .logo > img .right_side_header .mnu_top > li > a {
   display: block;
   text-decoration: none;
   font-weight: 500;
   color: #000;
   transition: color 0.4s ease;
 }
-#header .inner_header > .logo .right_side_header .mnu_top > li > a:hover {
-  color: #722ed1;
-} /*# sourceMappingURL=main.css.map */
+#header .inner_header .logo > img .right_side_header .mnu_top > li:hover {
+  color: #722ED1;
+}/*# sourceMappingURL=main.css.map */
