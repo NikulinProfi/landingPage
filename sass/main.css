@@ -83,7 +83,36 @@ img {
   color: #fff;
 }
 
+.btn {
+  margin-right: 16px;
+  color: #fff;
+  background-color: #722ED1;
+  padding: 14px 40px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn:hover {
+  background-color: #fff;
+  color: #111;
+}
+.btn.btn_white {
+  background-color: #fff;
+  color: #111;
+}
+.btn.btn_white:hover {
+  color: #fff;
+  background-color: #722ED1;
+}
+
 /*btns*/
+#top_banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #header {
   padding-top: 24px;
 }
@@ -100,24 +129,75 @@ img {
 #header .inner_header .logo > img {
   width: 100%;
 }
-#header .inner_header .logo > img .right_side_header {
+#header .inner_header .right_side_header {
   display: flex;
   align-items: center;
 }
-#header .inner_header .logo > img .right_side_header .mnu_top {
+#header .inner_header .right_side_header .mnu_top {
   list-style-type: none;
 }
-#header .inner_header .logo > img .right_side_header .mnu_top > li {
+#header .inner_header .right_side_header .mnu_top > li {
   display: inline-block;
   margin-right: 40px;
 }
-#header .inner_header .logo > img .right_side_header .mnu_top > li > a {
+#header .inner_header .right_side_header .mnu_top > li > a {
   display: block;
   text-decoration: none;
   font-weight: 500;
   color: #000;
   transition: color 0.4s ease;
 }
-#header .inner_header .logo > img .right_side_header .mnu_top > li:hover {
+#header .inner_header .right_side_header .mnu_top > li > a:hover {
   color: #722ED1;
+}
+
+.notif {
+  background-color: #F9F0FF;
+  border-radius: 20px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  max-width: 256px;
+}
+.notif img {
+  width: 16px;
+  height: auto;
+  margin-right: 7px;
+}
+.notif p {
+  color: #722ED1;
+}
+.notif a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-bottom: 1px solid #722ED1;
+  color: #722ED1;
+}
+.notif a:hover {
+  color: #5b25a7;
+  border-color: #5b25a7;
+}
+
+.main_banner {
+  padding: 240px 0 380px;
+}
+.main_banner .mb_info > h1 {
+  color: #160637;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.1;
+  max-width: 430px;
+  margin-top: 10px;
+}
+.main_banner .mb_info > .discr {
+  color: #8989A2;
+  margin: 14px 0 44px;
+  font-size: 18px;
+}
+.main_banner .mb_info > .btns {
+  display: flex;
+  align-items: center;
+}
+.main_banner .mb_info > .btn_white {
+  margin-left: 16px;
 }/*# sourceMappingURL=main.css.map */
