@@ -45,7 +45,9 @@
   <body>
     <section
       id="top_banner"
-      style="background-image: url('/img/favicon/Background_main_banner.svg')"
+      style="
+        background-image: url('/img/main_banner/Background_main_banner.svg');
+      "
     >
       <header id="header">
         <div class="container">
@@ -55,7 +57,15 @@
             /></a>
             <div class="right_side_header">
               <ul class="mnu_top">
-                <li><a href="#">About</a></li>
+                <li class="has_sub_menu">
+                  <a href="#">About</a>
+                  <ul class="sub_menu">
+                    <li><a href="#">Certification</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Requisites</a></li>
+                    <li><a href="#">Hystory</a></li>
+                  </ul>
+                </li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#">Login</a></li>
@@ -71,7 +81,7 @@
             <div class="col-lg-6">
               <div class="mb_info">
                 <div class="notif">
-                  <img src="/img/favicon/update_icon_mb.svg" alt="" />
+                  <img src="/img/main_banner/update_icon_mb.svg" alt="" />
                   <p>v3.1 released. <a href="#">Learn more</a></p>
                 </div>
                 <h1>Your data with real-time analytics</h1>
@@ -87,7 +97,7 @@
             </div>
             <div class="col-lg-6">
               <img
-                src="/img/favicon/image _mb.png"
+                src="/img/main_banner/image _mb.png"
                 alt="image"
                 class="img_responsive"
               />
