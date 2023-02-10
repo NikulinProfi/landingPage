@@ -115,13 +115,14 @@ img
 				>li
 					display: inline-block
 					margin-right: 40px
+					position: relative
 					a
 						display: block
 						text-decoration: none
 						font-weight: 500
 						color: #000
 						transition: color .4s ease
-						padding-right: 40px
+						padding: 5px 40px 5x 0
 						&:hover
 							color: $accent
 					>.sub_menu
@@ -132,24 +133,37 @@ img
 						z-index: 10
 						border-radius: 5px
 						padding: 5px 0
+						animation: .6s opas
+						display: none
 						>li
 							display: block
 							>a
+								display: block
 								padding: 3px 10px
 								font-size: 14px
-						&.has_sub_menu
-							&::after
-								content: ''
-								display: block
-								width: 8px
-								height: 4px
-								background-image: url('/img/arrow_down.svg')
-								background-size: cover
-								background-repeat: no-repeat
-								background-position: center
-								position: absolute
-								top: 12px
-								right: 25px
+					&.has_sub_menu
+						&:hover >.sub_menu
+							display: block
+
+						&::after
+							content: ''
+							display: block
+							width: 8px
+							height: 4px
+							background-image: url('/img/arrow_down.svg')
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center
+							position: absolute
+							top: 17px
+							right: 25px
+
+@keyframes opas
+	form
+		opacity: 0
+	to
+		opacity: 1
+
 .notif
 	background-color: $light_accent
 	border-radius: 20px
